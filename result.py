@@ -12,7 +12,8 @@ app = FastAPI()
 # Read allowed origins from env var (comma-separated), fallback to localhost
 ALLOWED_ORIGINS = os.getenv(
     "ALLOWED_ORIGINS",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://huggingface.co/spaces/kshitiz14/breedclassification"
 ).split(",")
 
 app.add_middleware(

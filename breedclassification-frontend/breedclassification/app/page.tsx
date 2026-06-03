@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from "react";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:7860";
+const API_URL = process.env.NEXT_PUBLIC_API_URL ;
 
 const BREED_INFO: Record<string, { type: string; origin: string; note: string }> = {
   Gir_cow:             { type: "Cow",     origin: "Gujarat",   note: "High milk yield, heat tolerant" },
